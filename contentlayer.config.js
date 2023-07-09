@@ -6,38 +6,35 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 /** @type {import('contentlayer/source-files').ComputedFields} */
 const computedFields = {
-  slug: {
-    type: 'string',
-    resolve: (doc) => doc._raw.flattenedPath,
-  },
-  tweetIds: {
-    type: 'array',
-    resolve: (doc) => {
-      const tweetMatches = doc.body.raw.match(
-        /<StaticTweet\sid="[0-9]+"\s\/>/g
-      );
-      return tweetMatches?.map((tweet) => tweet.match(/[0-9]+/g)[0]) || [];
-    },
-  },
-  structuredData: {
-    type: 'object',
-    resolve: (doc) => ({
-      '@context': 'https://schema.org',
-      '@type': 'BlogPosting',
-      headline: doc.title,
-      datePublished: doc.publishedAt,
-      dateModified: doc.publishedAt,
-      description: doc.summary,
-      image: doc.image
-        ? `https://leerob.io${doc.image}`
-        : `https://leerob.io/og?title=${doc.title}`,
-      url: `https://leerob.io/blog/${doc._raw.flattenedPath}`,
-      author: {
-        '@type': 'Person',
-        name: 'Lee Robinson',
-      },
-    }),
-  },
+	slug: {
+		type: "string",
+		resolve: (doc) => doc._raw.flattenedPath,
+	},
+	tweetIds: {
+		type: "array",
+		resolve: (doc) => {
+			const tweetMatches = doc.body.raw.match(
+				/<StaticTweet\sid="[0-9]+"\s\/>/g
+			);
+			return tweetMatches?.map((tweet) => tweet.match(/[0-9]+/g)[0]) || [];
+		},
+	},
+	structuredData: {
+		type: "object",
+		resolve: (doc) => ({
+			"@context": "https://schema.org",
+			"@type": "BlogPosting",
+			headline: doc.title,
+			datePublished: doc.publishedAt,
+			dateModified: doc.publishedAt,
+			description: doc.summary,
+			url: `https://valmn.cc/blog/${doc._raw.flattenedPath}`,
+			author: {
+				"@type": "Person",
+				name: "Valentin Manaila",
+			},
+		}),
+	},
 };
 
 export const Blog = defineDocumentType(() => ({

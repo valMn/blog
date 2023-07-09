@@ -48,6 +48,8 @@ export default async function GuestbookPage() {
     console.error(error);
   }
 
+  console.log('🔥', session?.user)
+
   return (
     <section>
       <h1 className="font-bold text-2xl mb-8 tracking-tighter">

@@ -23,18 +23,18 @@ const graphik = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leerob.io'),
+  metadataBase: new URL('https://valmn.cc'),
   title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson',
+    default: 'Valentin Manaila',
+    template: '%s | Valentin Manaila',
   },
   description: 'Developer, writer, and creator.',
   openGraph: {
-    title: 'Lee Robinson',
+    title: 'Valentin Manaila',
     description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
-    siteName: 'Lee Robinson',
-    locale: 'en-US',
+    url: 'https://valmn.cc',
+    siteName: 'Valentin Manaila',
+    locale: 'en-GB',
     type: 'website',
   },
   robots: {
@@ -49,10 +49,12 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: 'Lee Robinson',
+    title: 'Valentin Manaila',
+    // TODO
     card: 'summary_large_image',
   },
   verification: {
+    // TODO
     google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
     yandex: '14d2e73487fa6c71',
   },

@@ -1,7 +1,777 @@
 ---
-title: 'Hello, World!'
-publishedAt: '2023-01-01'
-summary: 'This is your first blog post.'
+title: '2023 State of Databases for Serverless & Edge'
+publishedAt: '2023-01-25'
+summary: 'An overview of databases that pair well with modern application and compute providers.'
+image: '/images/backend/og.png'
+---
+<Callout emoji="💡">
+
+This post has been updated in January 2023.
+
+</Callout>
+
+
+For startups, having product-market fit means you're building the right product for the right people. For DevRel, having community-messaging fit means you're using the right words to describe the product for that community.
+
+This post will outline a few examples of how I've found community-messaging fit and some tips to help you iterate with your messaging.
+
+## What is Community-Messaging Fit?
+
+Marketing to developers should be **clear** and **relatable**.
+
+- **Clear**—_not_ simple. The product often isn't simple, but the impact can be clear. If your explanation isn't clear yet, iterate and try again.
+- **Relatable**—_not_ obscure. Use language or analogies the community is familiar with. Connect new concepts with existing technologies or mental models.
+
+Your community members have unique backgrounds. They've learned to code from university, bootcamps, or are self-taught. They started with C, or PHP, or Python, or JavaScript. Different descriptions of your product will connect with groups of the community.
+
+**Community-messaging fit is when you've found the right description of the product that connects with the majority of your community.**
+
+Finding your fit isn't a one-time process. Your product will evolve and your community will grow. You have to be constantly iterating on the right messaging.
+
+## Finding Community-Messaging Fit
+
+Two good indicators for community-messaging fit are **virality** and **sharability**.
+
+Developers _want_ to share good content. When they've learned something new, or found a new way to explain a topic they're interested in, they will voluntarily amplify to their audience. When they have a “lightbulb moment”, they want to share this excitement.
+
+When the topic is explained clearly, and it relates back to things the developer understands, it makes it easily sharable. This is how virality happens.
+
+<Image
+  alt={`How virality happens from sharing a clear, relatable message`}
+  src={`/images/cmf/virality.png`}
+  width={2084 / 2}
+  height={802 / 2}
+/>
+
+## Examples
+
+### Next.js Middleware
+
+Since many Next.js developers have prior experience with Node.js and Express, I found that relating [Next.js Middleware](https://nextjs.org/docs/advanced-features/middleware) to Express Middleware helped it connect better with the community.
+
+Similar to how you can “stack” Express Middleware to augment parts of the routing stack, the Next.js Middleware function can be composed from a `Request` and eventually produce a `Response`.
+
+I've now landed on: Middleware gives you complete control over routing in Next.js. This description can be dialed up or down depending on the audience.
+
+### Edge Runtime
+
+The first iteration of describing the [Edge Runtime](https://vercel.com/docs/concepts/functions/edge-functions/edge-runtime) was a set of APIs that works in the browser, server, and on edge computing platforms like Vercel. Unfortunately, the name “edge” is also commonly used to refer to compute or data being globally distributed at _every_ network edge.
+
+The benefits of edge _compute_ were clear: they have no cold boots, are cost effective, and are extremely scalable. But that “edge” word still implied globally replicated. The best performance comes from co-locating your compute with your data. Feedback from the community showed that data was not usually globally replicated. So where should your “edge” compute run? Likely [regionally](https://vercel.com/blog/regional-execution-for-ultra-low-latency-rendering-at-the-edge).
+
+Edge was being used for both the _runtime_ as well as the _location_. This understanding led to an evolution of how I talked about the product. For the fastest performance, you want compute that runs close to your data, using a _light_ runtime. This light runtime is a _subset_ of Node.js APIs.
+
+## Keep on iterating
+
+Community-messaging fit is never finished because your community is ever-evolving.
+
+You want to start creating videos for developers but are unsure where to start. It seems daunting – what equipment do I need? How do I edit videos? How do I make them good quality? How do I distribute them?
+
+This guide will teach you everything you need to know to start creating videos for a technical audience. It will explain the fundamentals behind video production and explain the terms you need to know. It will show you how to have excellent video quality in your home studio.
+
+I create videos for my job (in Developer Relations) and have worked as a freelance videographer in the past. This multi-part guide will share tips I've learned over years of creating videos and also include a purchasing guide to save you time. I've done the research, and have different recommendations based on your price range.
+
+- **Part 1: Fundamentals of Video**
+- Part 2: Video Equipment & Purchasing Guide
+- Part 3: Shooting Videos & Screencasts
+- Part 3: Editing & Distributing
+
+## Why Video?
+
+Video is quickly becoming the most common way people consume content. With the global adoption of smartphones higher than ever ([80% of the total population in some countries](https://en.wikipedia.org/wiki/List_of_countries_by_smartphone_penetration)) and improvements to internet speeds, it's easier than ever to stream video. That's why TikTok was one of the [most visited websites in the world](https://www.forbes.com/sites/quickerbettertech/2021/12/26/tiktok-is-now-the-most-visited-website-in-2021and-other-small-business-tech-news-this-week) in 2021.
+
+## Reusing Content
+
+Creators can reuse content in many ways and redistribute it to multiple platforms. Podcasts do this well. They shoot an hour-long video and have:
+
+- The original video version
+- Audio-only version
+- Individual clips
+
+Then, they can distribute this content in multiple ways:
+
+- Audio streaming services (Spotify, Apple Music)
+- Full video to platforms encouraging longer content (YouTube)
+- Individual clips to social media platforms
+
+When combined with delegating parts of the creative process (filming, editing, uploading), this can be highly effective for creators. They sit down and have four conversations with guests a month (at an hour each) and have generated 10x content for months to follow.
+
+Most videos should start with a script. A well-written script is the first step of creating an exceptional video. But you've just created another piece of content to distribute – your writing! The same script used for your video can be used for a blog post or a series of tweets.
+
+## Video Outputs & Shot Types
+
+Different video formats require different research, planning, scripting, and output. There are two ways to deliver video: **pre-recorded** or **live**. Live video is gaining popularity but is more challenging than pre-recoded video. For both output types, there are a few common types of shots:
+
+- **Screen recordings:** Showing your editor, terminal, or browser as you explain a topic with audio.
+- **Talking heads:** A close-up shot of your subject, where they're speaking to the camera. The term [talking head](https://www.merriam-webster.com/dictionary/talking%20head) comes from traditional media.
+- **Mobile-first:** An important separate type because it's typically filmed vertically instead of horizontally.
+
+## Fundamentals of Video
+
+Let's take a look at the terminology and concepts you'll need to understand to successfully create your first video.
+
+### Camera
+
+You can film your videos with your phone, and it's arguably a better option for certain distribution platforms (like TikTok), but you'll want to invest in a [DSLR camera](https://www.adobe.com/creativecloud/photography/discover/dslr-camera.html) for higher quality eventually. You'll hear lots of new terms from the videography industry, so let's break down some of the most important ones.
+
+While some of these terms only apply to DSLR cameras, they're good to know even if you're shooting on an iPhone. In general, the goal is to end up with a shot that's not too dark and not too bright; instead, you want a shot that's _just right_, one with lots of detail.
+
+- **Aperture:** how much light is let into your camera (specifically your sensor). Aperture is measured in terms of _f-stops_ (f/2.8, f/4, f/5.6, etc.). Lower f-stop, more light. Higher f-stop, less light.
+
+<Image
+  alt={`Aperture`}
+  src={`/images/video/aperture.png`}
+  width={1422}
+  height={556}
+/>
+
+- **Exposure:** the brightness of your shot. If a shot is over-exposed, it's too bright and certain parts become “washed out”. If it's under-exposed, it's hard to make out all of the details and the footage can become grainy. Aperture affects your exposure.
+
+<Image
+  alt={`Exposure`}
+  src={`/images/video/exposure.png`}
+  width={720}
+  height={480}
+/>
+
+- **Shutter speed:** the length of time the camera shutter is open while taking a photo. Aperture is measured in sections or fractions of seconds (1/125s, 1/250s, 1/500s, etc.). Shutter speed can affect exposure and the sharpness of your video. For most developer content, you'll likely have a fixed shutter speed for talking heads.
+
+<Image
+  alt={`Shutter speed`}
+  src={`/images/video/shutter-speed.png`}
+  width={950}
+  height={334}
+/>
+
+- **ISO:** how sensitive your camera is to light. A higher ISO means brighter shots. ISO is measured in numbers (100, 200, 800, 1600, etc.). The goal is to keep a low ISO (100) for the best quality. For the type of content developers are producing, you can usually control your environment and lighting to allow for this to happen. Situations where you're filming and it's dark would require a higher ISO or external lighting.
+- **Frame rate:** A video is really just a bunch of pictures (frames). The frames per second, or FPS, is how we measure frame rate. Movies & TV typically use 24fps to allow for motion blur. To film slow motion, you want to have a higher fps (60fps or 120fps) to allow for additional frames when you're stretching the video out. Otherwise, the video will look choppy when slow instead of fluid.
+
+<Image
+  alt={`Frame rate`}
+  src={`/images/video/motion-blur.png`}
+  width={650}
+  height={364}
+/>
+
+- **Resolution:** You've probably heard 1080p, which is HD. This is 1920 pixels wide and 1080 pixels tall, expressed as 1920x1080. There's also 4K, which confusingly has 3840x2160 for UHD and 4096x2160 for “cinema” 4K.
+
+<Image
+  alt={`Resolution`}
+  src={`/images/video/resolution.png`}
+  width={745}
+  height={457}
+/>
+
+### Lens
+
+A camera is only as good as its lens. Further, different **focal lengths** affect how the image looks.
+
+The longer the focal length of a lens, the narrow its angle of view. Subjects _appear_ larger with longer focal length lenses than they do with our eyes. Inversely, short focal lengths make subjects seem much smaller than they do to our eyes.
+
+Faces are an excellent demonstration. Long focal lengths make faces appear rounder. Shorter focal lengths make faces appear thinner and amplify features such as noses and eyes.
+
+<Image
+  alt={`Focal lengths`}
+  src={`/images/video/focal-lengths.gif`}
+  width={750}
+  height={750}
+/>
+
+Extremely low focal lengths are called _ultra-wide_ (e.g. 16mm). This is now popularly known as the [GoPro](https://en.wikipedia.org/wiki/GoPro) look, although any lens at that focal length can recreate the same look. For example, 0.5x zoom on an iPhone camera is equivalent to a 13mm focal length.
+
+Extremely high focal lengths are called _telephoto_ and work best for outdoor shooting where you have plenty of space between the camera and subject.
+
+The longer the focal length, the further away you have to place the camera from the subject, which makes filming in small spaces inconvenient. This is why most developers use a wide or ultra-wide lens for indoor shooting.
+
+Different camera brands have [different types of mounts](https://www.studiobinder.com/blog/camera-lens-mounts-types-adapter/) (e.g. A-mount, E-mount, etc.). You need to ensure your lens mount matches your camera. For example, Sony cameras have an E-mount. You'll need to use E-mount lenses, or purchase an [adapter](https://en.wikipedia.org/wiki/Lens_adapter).
+
+### Audio
+
+Audio quality is arguably more important than video quality. Why? **Bad audio quality is worse than bad video quality**. _Especially_ when doing screen recordings.
+
+The goal when recording audio is to prevent [clipping](<https://en.wikipedia.org/wiki/Clipping_(audio)>) – when the audio is too loud and information is lost. You can always raise the volume of your recording, but you can't fix clipped audio. You prevent clipping by monitoring your audio and ensuring the level doesn't “peak”. Aim to record at -12db (decibels).
+
+<Image
+  alt={`Peaks`}
+  src={`/images/video/peaks.png`}
+  width={1040}
+  height={771}
+/>
+
+It's also important to control your environment. Have you ever seen images of artists singing in the studio? Their setup has been [acoustically treated and soundproofed](https://ehomerecordingstudio.com/acoustic-treatment-101/).
+
+<Image
+  alt={`Recording studio`}
+  src={`/images/video/studio.png`}
+  width={770}
+  height={436}
+/>
+
+Soundproofing is the process of making a room resistant to the passage of sound waves. You're blocking sounds from entering the room and preventing internal sounds from escaping. Certain materials, like the paneling on the wall above, absorb and trap sound waves.
+
+You also want to prevent _[plosives](https://en.wikipedia.org/wiki/Plosive)_ (e.g. words with the letter P) from introducing popping sounds. This can make your recording sound unprofessional. This is what [pop filters](https://en.wikipedia.org/wiki/Pop_filter) and windscreens in front of mics prevent.
+
+<Image
+  alt={`Pop filter`}
+  src={`/images/video/pop-filter.png`}
+  width={1200}
+  height={800}
+/>
+
+### Lighting
+
+To nail the professional look, you don't want to rely on natural lighting. You need a predictable, reliable way to light your subject. The most common way is to have a three-point lighting setup with a key, fill, and (hair/rim) light. I recommend watching [this video](https://www.youtube.com/watch?v=j_Sov3xmgwg) to learn more.
+
+<Image
+  alt={`Lighting`}
+  src={`/images/video/lighting.png`}
+  width={640}
+  height={355}
+/>
+
+A lot of lighting comes down to artistic preference. If you want the dramatic look, maybe you only use a single key light so there are more shadows.
+
+You will also want to _diffuse_ the light. This prevents lighting from looking harsh and unnatural, and instead better reflects natural lighting.
+
+If you've ever seen a professional photography studio, you've likely seen lights with diffusers. They often look like umbrellas or large circular coverings on top of lights.
+
+<Image
+  alt={`Photo studio`}
+  src={`/images/video/diffused.png`}
+  width={700}
+  height={393}
+/>
+
+## Conclusion
+
+That's a wrap on the fundamentals of video. You've learned about:
+
+- **Reusing Content**
+- **Video Outputs & Shot Types**
+- **Cameras**
+- **Lens**
+- **Audio**
+- **Lighting**
+
+Next, we'll learn about the different types of video equipment and I'll share some recommendations for equipment to purchase based on your price range.
+
+- Part 1: Fundamentals of Video
+- **Part 2: Video Equipment & Purchasing Guide**
+- Part 3: Shooting Videos & Screencasts
+- Part 3: Editing & Distributing
+
+
+React attempts to be as unopinionated as possible. This is both it's greatest strength _and_ weakness.
+
+Over the years, I've tried many different ways to style my React apps. Each solution has its pros and cons.
+This article will share my journey using CSS with React and how it's evolved to its current state. Then, I'll discuss pros/cons of
+different approaches for styling.
+
+## Vanilla CSS
+
+Like most, I started web development with vanilla CSS. All you need is a single HTML and CSS file. Pretty simple.
+
+```html title="index.html"
+<h1 class="header">Welcome</h1>
+```
+
+```css title="index.css"
+.header {
+  font-size: 32px;
+}
+```
+
+As I built more large applications, I began to understand some of the drawbacks.
+
+- **Reusability.** It's easy to create append-only stylesheets that become very complex.
+- **Global Namespace.** Since CSS has a [global namespace](https://css-tricks.com/regarding-css-global-scope/), you can unintentionally target too many elements.
+- **Colocation.** It's hard to modularize your CSS, which makes it difficult to delete code safely.
+
+At this point, I was introduced to [CSS pre-processors](https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor).
+These tools aim to introduce new funtionality and compile back to vanilla CSS.
+
+## Sass
+
+[Sass](https://sass-lang.com/), one of the most popular preprocessors, allows you to write more reusable, maintainable CSS.
+Some of the most popular features are [variables](https://sass-lang.com/documentation/variables), [mixins](https://sass-lang.com/documentation/at-rules/mixin), and [modules](https://sass-lang.com/documentation/modules).
+
+- **Variables.** I want to define global values once and share them throughout my stylesheets.
+- **Mixins.** I want to reuse particular snippets of CSS.
+- **Modules.** I want to split up my CSS files for a more maintainable codebase.
+
+```scss title="_base.scss"
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+```
+
+```scss title="_header.scss"
+@use 'base';
+
+.header {
+  font-size: 32px;
+}
+```
+
+Sass helped me write more modular, reusable CSS – at least, for a while. Over time, I ran into new issues.
+
+- **Naming.** As your CSS grows, it's easy to have class names get out of hand.
+- **Browser support.** Certain features aren't [supported across all browsers](https://caniuse.com/) and require [vendor prefixes](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix) like `-moz-` (Firefox), `-webkit-` (Safari), and `-ms-` (Internet Explorer and Edge).
+
+To solve naming, I started to adopt [BEM](http://getbem.com/introduction/).
+Block Element Modifier is a methodology that helps you to create reusable components
+and organize CSS in a modular way, which keeps specificity low.
+
+```html
+<button class="button">Cancel</button>
+<button class="button button--primary">Submit</button>
+```
+
+```css
+.button {
+  color: black;
+  background-color: gray;
+}
+
+.button--primary {
+  color: white;
+  background-color: green;
+}
+```
+
+Naming conventions helped but didn't fix the root cause: **naming is hard**.
+For browser support, it's possible to set up your Sass toolchain with a tool like [autoprefixer](https://css-tricks.com/autoprefixer/) to handle vendor prefixes.
+However, around this time, I started using component-based frameworks like React. This led me to explore CSS-in-JS.
+
+## CSS-in-JS
+
+I started using CSS-in-JS when building a component library. At first, CSS-in-JS solved all my problems.
+
+- **Specificity** is solved by auto-generated class names.
+- **Colocation** is solved by putting CSS directly with the component, making it easy to delete code.
+- **Browser support** is solved by having autoprefixer built-in.
+- **Variables** are solved by creating a global theme.
+
+However, **naming** was still a huge pain.
+
+As the component library grew, I began to explore [Theme UI](https://theme-ui.com) and [styled-system](https://styled-system.com/).
+These were more structured approaches to scaling CSS-in-JS to help enforce a design system.
+Plus, they helped solve naming. Trying to scale [styled-components](https://styled-components.com/) alone in a large application made me get _really_ creative with names.
+You can only have so many container, wrapper, layout things. For example:
+
+```js
+const HomeContainerWrapper = styled.div`
+   padding: 8px;
+   font-weight: bold;
+   color: white;
+   background: blue;
+`;
+
+<HomeContainerWrapper>
+  Hello
+</HomeContainerWrapper>
+
+// Forget about naming
+<Box
+  padding={3}
+  fontWeight='bold'
+  color='white'
+  bg='blue'
+>
+  Hello
+</Box>
+```
+
+Now, I know what you're thinking. Inline styles 🤮. I'll admit, I wasn't sold at first. But it grew on me – and that brings us to now.
+
+## Current State
+
+I've recently been working with [CSS Modules](https://github.com/css-modules/css-modules) and [Tailwind CSS](https://tailwindcss.com/).
+Both of these approaches to styling React applications have prompted me to step back and evaluate the ecosystem.
+
+Below, I've summarized pros and cons of various approaches to styling your React application. I tried to make this comparison as unopinionated as possible.
+The choice that's best for you likely depends on:
+
+- Your experience (stick with what you know).
+- Your team.
+- The size of your application.
+- What you're trying to build.
+
+## Pros and Cons
+
+### Vanilla CSS
+
+<ProsCard
+  title="vanilla CSS"
+  pros={[
+    `You don't want to add a toolchain. Vanilla CSS works with every browser & language.`,
+  ]}
+/>
+
+<ConsCard
+  title="vanilla CSS"
+  cons={[`You're building a large web application.`]}
+/>
+
+### CSS Modules
+
+[CSS Modules](https://github.com/css-modules/css-modules) would be my choice for smaller teams that don't need to share
+components across applications.
+
+[Next.js](https://nextjs.org) has support for CSS Modules, which means you don't have to worry about setting up [Webpack](https://webpack.js.org/).
+It also sets up [autoprefixer](https://css-tricks.com/autoprefixer/) making CSS Modules an attractive alternative to CSS-in-JS in some cases.
+
+<ProsCard
+  title="CSS modules"
+  pros={[
+    'You want class names scoped to the corresponding component.',
+    'You want to use CSS variables to reuse values.',
+    'You need your application to work without JavaScript.',
+    'You want the lowest barrier to entry.',
+    'You want to use any language, not just JavaScript.',
+  ]}
+/>
+
+<ConsCard
+  title="CSS modules"
+  cons={[
+    `You don't want to configure a toolchain like Webpack.`,
+    'You need to distribute a package on NPM.',
+    'You want nesting support by default (requires PostCSS).',
+    `You don't want to context switch between files.`,
+  ]}
+/>
+
+### CSS-in-JS
+
+There's many different CSS-in-JS libraries. The two most popular are [styled-components](https://styled-components.com/) and [Emotion](https://emotion.sh/docs/introduction).
+
+There's also zero-runtime solutions like [Linaria](https://github.com/callstack/linaria), where CSS is extracted to CSS files at build-time.
+To see comparisons between different libraries, see [CSS-in-JS benchmarks.](https://github.com/A-gambit/CSS-IN-JS-Benchmarks)
+
+<ProsCard
+  title="CSS-in-JS"
+  pros={[
+    'You want to distribute as reusable components on NPM.',
+    'You want to take advantage of anything in the JavaScript ecosystem.',
+    'You want to colocate styles with components, making it easy to delete code.',
+    'You need to support multiple themes.',
+  ]}
+/>
+
+<ConsCard
+  title="CSS-in-JS"
+  cons={[
+    `You don't want to configure a toolchain like Webpack.`,
+    'You are sick of figuring out names for things.',
+    'You believe it breaks separation of concerns.',
+    `You don't want to enforce all consumers must use the same CSS-in-JS solution.`,
+  ]}
+/>
+
+### Theme UI / Styled System
+
+Both [Theme UI](https://theme-ui.com) and [styled-system](https://styled-system.com/) abide by the [System UI theme specification](https://system-ui.com/).
+This specification intends to help make UI components, libraries, and tools as interoperable as possible.
+
+The primary use case for these libraries is implenting a component library and design system.
+One of my favorite libraries is [Chakra UI](https://next.chakra-ui.com/).
+
+<ProsCard
+  title="Theme UI / styled-system"
+  pros={[
+    `You're building a component library.`,
+    'You need to enforce a design system.',
+    'You want to spend less time trying to name components.',
+  ]}
+/>
+
+<ConsCard
+  title="Theme UI / styled-system"
+  cons={[
+    'You dislike providing styles as props.',
+    'You believe it breaks separation of concerns.',
+  ]}
+/>
+
+### Tailwind CSS
+
+[Tailwind CSS](https://tailwindcss.com/) has been rapidly growing in popularity. Many people are frustrated with the bloat of CSS frameworks like
+[Bootstrap](https://getbootstrap.com/) and want an alternative. Tailwind provides an impressive developer experience with a refined API.
+
+With the combination of [Tailwind UI](https://tailwindui.com/), you can easily build extensible, well-designed applications.
+
+<ProsCard
+  title="Tailwind"
+  pros={[
+    'You want to never leave your HTML (or JSX).',
+    'You need to enforce a design system.',
+    'You want to spend less time trying to name components.',
+  ]}
+/>
+
+<ConsCard
+  title="Tailwind"
+  cons={[
+    `You don't want (potentially) long class names.`,
+    `You don't want to learn Tailwind syntax, which is slightly different than standard CSS.`,
+  ]}
+/>
+
+Next.js Conf exceeded all my expectations this year.
+
+**110,000+ registered** and **55,000+ joined live** to watch the keynote and community talks. Hundreds of developers joined live in San Francisco, London, and New York.
+
+This conference was unlike any I've attended before – we put _so much effort_ into creating a unique experience, both for those online and in person.
+
+Building and growing a community is the most rewarding part of my role, and I'd like to take you behind the scenes on all things Next.js Conf 2022.
+
+
+## Better ingredients, better pizza, Next.js Conf
+
+'Twas the night before Conf™️ and we hosted a small community dinner at a local pizzeria. **It was invigorating.** Old friends getting back together after years – and new friends joining from around the world to talk JavaScript and the Web.
+
+
+One person told me:
+
+**"The food was good, the people were great, and the conversation was even better"**
+
+Honestly, it doesn't get much better than that for me.
+
+## We'll do it live¹
+
+Our team sprinted towards the Conf finish line, trying to get everything ready for the big day. I told myself "Oh, we'll worry about the pre-show later, first we need to do [x, y, z]". Welp. Turn out preparing for things makes you more prepared.
+
+It was kind of hilarious – Delba and I went to practice that morning and we both couldn't really make words come out of our mouths. A combination of nerves and excitement. I became stressed, 30 minutes before we were scheduled to go live in front of thousands of people.
+
+But... the lack of scripting and planning actually led to a _great_ outcome. We truly did it live – it felt authentic. To warm up the conference before the keynote, Delba and I bantered back and forth about the upcoming day of talks and brought community members and conf speakers up on the stage.
+
+
+Thank you again [Rich](https://twitter.com/Rich_Harris), [Una](https://twitter.com/Una), [Dan](https://twitter.com/dan_abramov), [Swyx](https://twitter.com/swyx), and [Kap](https://twitter.com/kapehe_ok) for joining us. Y'all are the best.
+
+## Next.js 13 Pro Max by Vercel: Starting at $1299
+
+After finishing the pre-show, Delba and I walked backstage to get mic'd up before the keynote Q&A. Guillermo was about to go out on stage. We wished him good luck, and off he went.
+
+I watched the live monitor backstage and heard the crowd cheer. The gravity of the moment sunk in. I started jumping around with excitement. All the work had led to this moment.
+
+There were _so_ many tweets. I think my phone froze. And the _memes_ – the memes were incredible.
+
+
+The light-hearted jokes and slight roast of our very-clearly-Apple-inspired-love of the keynote made me smile and seemed fun for the whole community.
+
+<Image
+  alt={`Me hosting the Q&A with Next.js and React team members after the keynote.`}
+  src={`/images/nextjs-conf-2022-recap/qna.jpg`}
+  width={2000 / 2}
+  height={1293 / 2}
+/>
+
+You can [rewatch the keynote](https://www.youtube.com/watch?v=NiknNI_0J48) in case you missed it, or [read my summary tweet thread](https://twitter.com/leeerob/status/1585349567410626560).
+
+## Hybrid theory²
+
+After some Q&A, we kicked off the 27 community talks.
+
+We wanted an equally great experience, whether you attended online or in person. I think there's still room to improve, but there's one specific piece I'm very happy with.
+
+The community talks were pre-recorded. Speakers were able to prepare, polish, and submit their best work ahead of time. Then, we flew them to San Francisco so they could all meet each other, interact with the community, and enjoy the day. No pre-talk anxiety.
+
+The quality of content and speakers this year was the best it's ever been. We're releasing all of the talks on the Vercel YouTube, if you want to [check out the playlist](https://www.youtube.com/playlist?list=PLBnKlKpPeagll1CCK08EvjqgCq0C_dXZq&)¹.
+
+## And after the party is the hotel lobby³
+
+Hassan and I spent _a lot_ of time thinking about the after-party. An event where you could have a drink and enjoy some music, or instead, escape to a quiet space to socialize and play games.
+
+
+My original _inspo_ was "make it like a Daft Punk concert" but with arcade games. By the end of the night, most people were in heated competition in foosball or table tennis.
+
+Kudos to [Hassan](https://twitter.com/nutlope) for an event well done.
+
+## Disney adults or Pokémon trainers?
+
+The most underrated part of the conference was pin collecting and trading.
+
+There were 15 different collectible pins. You could only obtain some by talking to specific people (like Evil Rabbit or Rich Harris for Svelte). Others you had to visit specific places (like the after party).
+
+
+Watching everyone collect/trade pins and flaunt them on their conference lanyards was awesome. I didn't know this was a [Disney thing](https://www.shopdisney.com/toys-collectibles/collectibles/pins/) until someone pointed it out. I was just trying to level up my _Nexteon_, which I'm going to assume is one of the [Eevee evolutions](<https://bulbapedia.bulbagarden.net/wiki/Eevee_(Pok%C3%A9mon)>).
+
+## Making ship happen
+
+Oh yeah, we also shipped some stuff:
+
+- [Next.js 13](http://nextjs.org/13)
+- [Turbopack](https://vercel.com/blog/turbopack)
+- [Vercel Analytics, now with page views](https://vercel.com/blog/vercel-acquires-splitbee)
+- [New Turborepo / Turbopack landing pages](https://turbo.build/)
+- [New Vercel Analytics landing page](https://vercel.com/analytics)
+- [New Vercel](https://vercel.com/home) / [Next.js home pages](http://nextjs.org/)
+- [Next.js beta docs for the `app/` directory](https://beta.nextjs.org/docs)
+
+I can't understate the team effort it took to pull this event off. So many Vercelians played a vital role in its success. Notably, a major kudos to the Next.js and Turbo teams for their last-minute push on bug fixing, developer experience, documentation improvements and suggestions, and more.
+
+This conference marks a major leap forward for the Vercel and Next.js ecosystem. I'm looking forward to diving further into the community feedback on the new `app/` directory in Next.js, Turbopack, Vercel Analytics, and more.
+
+Until next time.
+
 ---
 
-Hello, World!
+¹*This was [me and Delba preparing](https://www.youtube.com/watch?v=vu2NK5REvWM) for the Next.js Conf pre-show.*
+
+²*Linkin Park, anyone?*
+
+³*It was actually JJ's apartment, with no shortage of people or excitement.*
+
+
+If this was helpful, [let me know on Twitter](https://twitter.com/leeerob).
+
+You take the input (questions, objections) and iterate towards the new output (analogies, clarifications). If you're not seeing virality, keep tweaking the message until it's clear and relatable. Build an inventory of analogies and examples to help connect the dots with the community.
+
+Let me know if you have good examples of clear, relatable descriptions of developer products, and _why_ they're impactful for their community.
+
+There's been massive innovation in the database and backend space for developers building applications with serverless and edge compute. There are new tools, companies, and even programming models that simplify how developers store data.
+
+This post will be an overview of databases that pair well with modern application and compute providers.
+
+## Criteria
+
+I'll focus on **transactional¹** workloads instead of analytical² workloads.
+
+The “backend” space is vast: search, analytics, data science, and more – so I'll niche down here. The primary criteria of this overview is:
+
+1. Services that work exceptionally well when paired with serverless and edge compute
+2. Services that work with JavaScript and TypeScript codebases
+
+> **Disclaimer:** I work at Vercel, which partners with companies in this post. I also have personally used many of these tools for my own personal projects. My site currently uses PlanetScale and I'm also an angel investor in Supabase (mentioned below).
+
+## A new programming model
+
+Relational databases have been around for 25+ years.
+
+While there are new companies creating _serverless-first_ storage solutions, a new programming model is required for workloads to be compatible with serverless compute and modern runtimes.
+
+These solutions must be:
+
+- **Connectionless:** Developers don't want to think about manual connection management. Traditional database protocols are stateful, whereas HTTP is mostly stateless, making it easier to use with scale to zero compute. Exposed through an SDK or HTTP API, “connectionless” solutions provide an **abstraction over connection pooling**.
+- **Web native:** Browser data-fetching APIs (e.g. Web `fetch`) and protocols are eating the world. New databases use HTTP APIs or WebSockets, rather than opening direct connections to the database. This makes them compatible with all forms of compute (including the lighter runtime used in edge compute).
+- **Lightweight:** Client libraries (and drivers) are becoming thin. Complexity is shifting to the database vendor, taking on the burden as part of their global infrastructure. For example, their gateway might handle connection pooling or provide caching infrastructure. This has led to a new wave of ORMs (i.e. abstractions to query data) both as standalone libraries and as integrated database SDKs.
+- **(Bonus) Type-safe:** TypeScript developers are favoring databases or libraries which provide tooling to enable type-safe access to your data. For example: [Prisma](https://www.prisma.io/), [Kysely](https://github.com/koskimas/kysely), [Drizzle](https://github.com/drizzle-team/drizzle-orm), [Contentlayer](https://www.contentlayer.dev/), and [Zapatos](https://jawj.github.io/zapatos/).
+
+Consider databases like Postgres. New solutions like Neon and Supabase abstract connection management, providing you with a simple way to query and mutate data. In the case of Supabase, there's a client library that uses an HTTP API [built on PostgREST](https://supabase.com/docs/guides/api):
+
+```jsx
+import { createClient } from '@supabase/supabase-js';
+let supabase = createClient('https://<project>.supabase.co', '<your-anon-key>');
+let { data } = await supabase.from('countries').select();
+```
+
+And for Neon:
+
+```jsx
+import { Client } from '@neondatabase/serverless';
+let client = new Client(env.DATABASE_URL);
+let {
+  rows: [{ now }],
+} = await client.query('select now();');
+```
+
+Neon's solution is [particularly interesting](https://neon.tech/blog/serverless-driver-for-postgres/).
+
+> The basic premise is simple: our driver redirects the PostgreSQL wire protocol via a special proxy. Our driver connects from the edge function to the proxy over a WebSocket, telling the proxy which database host and port it wants to reach. The proxy opens a TCP connection to that host and port and relays traffic in both directions.
+
+<Image
+  alt={`Neon architecture diagram for connection pooling`}
+  src={`/images/backend/neon.png`}
+  width={1600}
+  height={840}
+/>
+
+<Callout emoji="💡">
+
+Using WebSockets, instead of HTTP, does have tradeoffs. There might be additional latency on the first request setup, but subsequent requests are faster. There's an [RFC](https://www.rfc-editor.org/rfc/rfc9220.pdf) for WebSockets with `HTTP/3` which would remove that extra network roundtrip.
+
+</Callout>
+
+The connection management isn't going away – it's just being handled by the vendor now.
+
+There's even solutions like PlanetScale which can handle up to [a million connections](https://planetscale.com/blog/one-million-connections), which also allows you to effectively never think about managing connections.
+
+## Trends
+
+This new programming model has created emerging trends for database companies:
+
+- Databases are increasingly becoming **data platforms**, including other adjacent solutions like full-text search and analytics.
+- The **decoupling of storage and compute**, popularized by Snowflake (and more), is enabling new players (e.g. Neon et al.) to massively reduce the cost of a “database at rest”. This pairs well with frontend git branch-based workflows, where you want to scale to zero when not being used.
+- Increasingly developers **don't want to “dial the knobs”**. Solutions like DynamoDB (and in some ways S3) provided infinite scale without needing to tweak memory, storage, CPU, clusters, and instances.
+- The dream of **global data** is here, but not how it was predicted. Trying to replicate _all_ data to _every_ network edge is probably not the correct solution most times. Instead, we're seeing specialized data APIs and the emergence of user-specific data stores (e.g. for shopping cart data).
+- More databases are **embracing serverless**, but what “serverless” means to them varies. There are different vectors of autoscaling: connections, storage, compute, and more.
+
+## Databases
+
+I'll bucket these into “established” and “rising” categories, serverless/serverful, as well as generally available (GA) and pre-GA. I'll also mostly talk about managed vendors.
+
+For example, you can of course run MySQL or Postgres on major cloud providers like AWS. There's a long tail of niche data storage solutions, so some will definitely be missing that I haven't heard of or used.
+
+### Established serverless solutions
+
+- **DynamoDB**
+  - **[AWS DynamoDB:](https://aws.amazon.com/dynamodb/)** Fully managed, serverless, key-value NoSQL database.
+- **Firebase**
+  - **[Firestore:](https://firebase.google.com/docs/firestore)** Over 10 years old now, Firestore is a well-adopted document database. One unique advantage Firebase is its built-in support for authentication, real-time workloads, and cross-platform support for mobile.
+- **MongoDB**
+  - [Atlas Serverless:](https://www.mongodb.com/use-cases/serverless) MongoDB has an entire data platform, including search / analytics / etc. Their recent investment into serverless is very exciting, with Atlas Serverless now [generally available](https://www.mongodb.com/blog/post/embrace-benefits-serverless-development-atlas). Their [Data API](https://www.mongodb.com/docs/atlas/api/data-api/) makes them a fantastic pair for serverless / edge.
+- **MySQL**
+  - **[PlanetScale](https://planetscale.com/):** MySQL through [Vitess](https://planetscale.com/blog/all-the-tech-planetscale-replaces). Can easily handle quite a [large](https://planetscale.com/blog/one-million-queries-per-second-with-mysql) [scale](https://planetscale.com/blog/one-million-connections) and also includes some nice features to [speed up](https://planetscale.com/blog/introducing-planetscale-boost) and [monitor](https://planetscale.com/blog/introducing-planetscale-insights-advanced-query-monitoring) queries. Their [serverless driver](https://planetscale.com/blog/introducing-the-planetscale-serverless-driver-for-javascript) (`@planetscale/database`) has been easy to use, but I prefer [Kysely](https://github.com/depot/kysely-planetscale).
+- **PostgreSQL**
+  - **[AWS Aurora](https://aws.amazon.com/rds/aurora/serverless/):** One of the first serverless Postgres offerings.
+  - **[CockroachDB](https://www.cockroachlabs.com/blog/announcing-cockroachdb-serverless/):** Autoscales and distributes data across multiple nodes. Focused on high data consistency and integrity. Supports most of Postgres but not stored procedures and extensions.
+- **Redis**
+  - **[Upstash](https://upstash.com/):** Offers durable/consistent Redis, global replication options, and Kafka. Fantastic `@upstash/redis` HTTP/REST client library.
+
+### Rising serverless database solutions
+
+- **Generally Available (GA)**
+  - **[Fauna](https://fauna.com/):** They were an early mover in the serverless data space. I've had success with their GraphQL APIs before, but feel mostly indifferent on [FQL](https://docs.fauna.com/fauna/current/api/fql/).
+- **Pre-GA**
+  - **[Convex](https://www.convex.dev/)**: Fantastic for real-time workloads, but also a very simple, type-safe interface for querying/mutating data. You write (and think) in functions. Pairs well with React's mental model.
+  - **[Grafbase](https://grafbase.com/)**: If you love GraphQL, Grafbase is worth exploring. Designed to integrate into branch-based workflows + fast reads globally. Realtime and full-text search are in the works.
+  - **[Neon:](https://neon.tech/)** Postgres with separation of storage and compute. Uniquely designed for serverless and works with the native Postgres driver + supports database branching workflows.
+  - **[Supabase](https://supabase.com/):** Open-source, built-on pure Postgres. [Database](https://supabase.com/database) + [Auth](https://supabase.com/auth) + [Storage](https://supabase.com/storage) and more. Scales up on pay-as-you-go, and [working on scale to zero](https://supabase.com/blog/supabase-series-b#where-were-going).
+  - **[Xata](https://xata.io/)**: Not only a database, but search / analytics as well. I'm a fan of their spreadsheet-like UI, which is approachable for a wider audience.
+- _+ Long tail of new providers that can do DB hosting (Railway, Render, Fly, etc)._
+
+### Stateful backends and other solutions
+
+- **Generally Available (GA)**
+  - **[AlloyDB](https://cloud.google.com/alloydb):** Very exciting innovation coming from Google. AlloyDB is unique because it can handle both transactional¹ and analytical² workloads.
+  - **[Ably](https://ably.com/):** Realtime infrastructure with [queues support](https://ably.com/docs/general/queues) and other message durability options.
+  - **[Crunchy Postgres](https://www.crunchydata.com/):** Crunchy Postgres is ["just Postgres"](https://changelog.com/news/just-postgres-LWm4). Focused on performance and availability, cost-effectiveness, and supporting all native Postgres features.
+  - **[Hasura:](https://hasura.io/)** Makes it easy to connect data from many different sources and expose it as a GraphQL API. Can use Neon under-the-hood as the database provider.
+  - **[Liveblocks](https://liveblocks.io/):** Realtime collaboration infrastructure, they offer persistent [conflict-free data](https://liveblocks.io/conflict-free-data-types) along with APIs for document browsing, permissions management, database sync. Beautiful design and documentation.
+  - **[Replicache](https://replicache.dev/)**: More of a database _synchronization engine_ that can be coupled with other solutions with no real-time solution. We use this for [comments on Vercel previews](https://vercel.com/blog/making-live-reviews-a-reality-enhanced-preview-experience).
+  - **[TimeScale](https://www.timescale.com/):** For both transactional and analytical workloads. Adds many features found in NoSQL databases to Postgres, and also integrates with S3 for storage.
+- **Pre-GA**
+  - **[ChiselStrike](https://www.chiselstrike.com/):** Write your TypeScript class, generate an API. Really leaning into the “infrastructure from code” approach, you write and think in functions, somewhat similar to Convex.
+  - **[EdgeDB](https://www.edgedb.com/):** EdgeDB is challenging the status quo. Particularly the “merger” between ORM / database, more than just a query builder, but a way to _optimize_ queries.
+  - **[Nhost:](https://nhost.io/)** Firebase, but with GraphQL. Built on Hasura, Postgres, and S3.
+  - [Rowy:](https://www.rowy.io) Low-code, spreadsheet-like backend (almost like an open-source Airtable) but they also have the ability to write functions to mutate data.
+  - [SurrealDB:](https://surrealdb.com/) Has its own SQL-flavored syntax, also trying to provide the spreadsheet-like UI for viewing data (still waitlist access, haven't used it).
+  - **[Tigris:](https://www.tigrisdata.com/)** Document database, focused on real-time and also includes full-text search.
+  - **[WunderGraph:](https://wundergraph.com/)** Trying to lead with an excellent ORM / client library (end-to-end type safety, GraphQL support) and wedge into a cloud product (still waitlist access, haven't used it).
+- **Other Solutions**
+  - **Caching Engines:** [Stellate](https://stellate.co/), [Prisma Accelerate](https://www.prisma.io/data-platform/accelerate), [ReadySet](https://readyset.io/).
+  - **Cloud Provider Offerings:** Azure SQL, Azure CosmosDB, Google Cloud SQL, Google BigTable, and many more.
+  - **Content Management (Headless CMS):** These can still act as a database, just a different domain-specific solution. [Sanity](https://www.sanity.io/), [Contentful](https://www.contentful.com/), [Sitecore](https://www.sitecore.com/), and more.
+
+---
+
+¹ Commonly referred to as OLTP (Online _Transactional_ Processing). These are for CRUD operations, most commonly the MySQL and Postgres databases of the world.
+
+² Commonly referred to as OLAP (Online _Analytical_ Processing). These are for your real-time data workloads, like [Clickhouse](https://clickhouse.com/) (also [Tinybird](https://www.tinybird.co/)), [SingleStore](https://www.singlestore.com/), [TimeScale](https://www.timescale.com/), and [ElasticSearch](https://www.elastic.co/).
+
+_Thanks to [Guillermo Rauch](https://twitter.com/rauchg), [Paul Copplestone](https://twitter.com/kiwicopple), [Fredrik Björk](https://twitter.com/fbjork), [Anthony Shew](https://twitter.com/anthonysheww), [Craig Kerstiens](https://twitter.com/craigkerstiens), [Jamie Turner](https://twitter.com/jamwt), [Nikita Shamgunov](https://twitter.com/nikitabase), [Yoko Li](https://twitter.com/stuffyokodraws), [Pratyush Choudhury](https://twitter.com/177pc), [Stas Kelvich](https://twitter.com/kelvich), [Enes Akar](https://twitter.com/enesakar), and [Steven Tey](https://twitter.com/steventey) for reviewing this post._

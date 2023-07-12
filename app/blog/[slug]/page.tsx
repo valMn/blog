@@ -94,7 +94,7 @@ export default async function Blog({ params }) {
         <p className="text-sm text-neutral-600 dark:text-neutral-400">
           {formatDate(post.publishedAt)}
         </p>
-        <ViewCounter allViews={allViews} slug={post.slug} trackView />
+        {/* <ViewCounter allViews={allViews} slug={post.slug} trackView /> */}
       </div>
       <Mdx code={post.body.code} tweets={tweets} />
     </section>

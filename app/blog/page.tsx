@@ -32,11 +32,12 @@ export default async function BlogPage() {
               <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
                 {post.title}
               </p>
-              <ViewCounter
+
+              {/* <ViewCounter
                 allViews={allViews}
                 slug={post.slug}
                 trackView={false}
-              />
+              /> */}
             </div>
           </Link>
         ))}

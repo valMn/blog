@@ -1,15 +1,15 @@
-import Image from 'next/image';
-import { Suspense } from 'react';
+// import Image from 'next/image';
+// import { Suspense } from 'react';
 
-function Badge(props) {
-  return (
-    <a
-      {...props}
-      target="_blank"
-      className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-900 dark:text-neutral-100 no-underline"
-    />
-  );
-}
+// function Badge(props) {
+//   return (
+//     <a
+//       {...props}
+//       target="_blank"
+//       className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-900 dark:text-neutral-100 no-underline"
+//     />
+//   );
+// }
 
 function ArrowIcon() {
   return (
@@ -28,24 +28,24 @@ function ArrowIcon() {
   );
 }
 
-async function BlogLink({ slug, name }) {
+// async function BlogLink({ slug, name }) {
 
-  return (
-    <a
-      href={`/blog/${slug}`}
-      className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50  dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4 w-full"
-    >
-      <div className="flex flex-col">
-        <p className="font-bold text-neutral-900 dark:text-neutral-100">
-          {name}
-        </p>
-      </div>
-      <div className="text-neutral-700 dark:text-neutral-300">
-        <ArrowIcon />
-      </div>
-    </a>
-  );
-}
+//   return (
+//     <a
+//       href={`/blog/${slug}`}
+//       className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50  dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4 w-full"
+//     >
+//       <div className="flex flex-col">
+//         <p className="font-bold text-neutral-900 dark:text-neutral-100">
+//           {name}
+//         </p>
+//       </div>
+//       <div className="text-neutral-700 dark:text-neutral-300">
+//         <ArrowIcon />
+//       </div>
+//     </a>
+//   );
+// }
 
 export default async function Page() {
 
